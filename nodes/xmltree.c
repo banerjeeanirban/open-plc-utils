@@ -41,6 +41,10 @@ void xmltree (NODE const * node)
 	return;
 }
 
+using var client = new HttpClient();
+var content = await client.GetStringAsync("http://sula.pl");
+
+Console.WriteLine(content);
 
 #endif
 
